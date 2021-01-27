@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<bean name="userdao" class="com.bookishTalk.dao.UserDAO"/>
+		<bean name="bookdao" class="com.bookishTalk.dao.BookDAO"/>
+		<bean name="bookValidator" class="com.bookishTalk.Validators.BookValidator"/>
+		<bean name="bookPojo" class="com.bookishTalk.pojo.BookPojo" />
+		<bean name="userPojo" class="com.bookishTalk.pojo.UserPojo" />
+		<bean name="userValidator" class="com.bookishTalk.Validators.UserValidator"/>
+</beans>
